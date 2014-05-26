@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="Achats" table="achats">
+    <indexes>
+      <index name="fk_achats_membres1_idx" columns="membre"/>
+    </indexes>
+    <id name="produit" association-key="true"/>
+    <field name="payementrealise" type="integer" column="payementRealise" nullable="false"/>
+    <field name="payementmode" type="integer" column="payementMode" nullable="true"/>
+    <field name="payementdate" type="datetime" column="payementDate" nullable="true"/>
+    <one-to-one field="produit" target-entity="Produits">
+      <join-columns>
+        <join-column name="produit" referenced-column-name="id"/>
+      </join-columns>
+    </one-to-one>
+    <many-to-one field="membre" target-entity="Membres">
+      <join-columns>
+        <join-column name="membre" referenced-column-name="id"/>
+      </join-columns>
+    </many-to-one>
+  </entity>
+</doctrine-mapping>

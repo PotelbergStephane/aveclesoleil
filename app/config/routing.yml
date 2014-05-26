@@ -1,0 +1,24 @@
+jsv_membres:
+    resource: "@JSVMembresBundle/Resources/config/routing.yml"
+    prefix:   /
+
+jsv_formations:
+    resource: "@JSVFormationsBundle/Resources/config/routing.yml"
+    prefix:   /
+
+jsv_multi_site:
+    resource: "@JSVMultiSiteBundle/Resources/config/routing.yml"
+    prefix:   /
+
+jsv_dons:
+    resource: "@JSVDonsBundle/Resources/config/routing.yml"
+    prefix:   /
+
+jsv_produits:
+    resource: "@JSVProduitsBundle/Resources/config/routing.yml"
+    prefix:   /
+
+jsv_general:
+    resource: "@JSVGeneralBundle/Resources/config/routing.yml"
+    prefix:   /
+

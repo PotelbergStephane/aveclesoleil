@@ -1,0 +1,7 @@
+parameters:
+#    jsv_formations.example.class: JSV\FormationsBundle\Example
+
+services:
+#    jsv_formations.example:
+#        class: %jsv_formations.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

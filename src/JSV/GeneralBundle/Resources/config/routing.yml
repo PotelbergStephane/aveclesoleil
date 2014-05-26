@@ -1,0 +1,3 @@
+jsv_general_homepage:
+    pattern:  /{site}/{rub}
+    defaults: { _controller: JSVGeneralBundle:Articles:listBySite }

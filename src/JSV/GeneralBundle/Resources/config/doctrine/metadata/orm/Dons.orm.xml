@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="Dons" table="dons">
+    <indexes>
+      <index name="fk_dons_membres1_idx" columns="membre"/>
+    </indexes>
+    <id name="id" type="integer" column="id">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="montant" type="decimal" column="montant" precision="10" scale="2" nullable="false"/>
+    <field name="donrealise" type="integer" column="donRealise" nullable="false"/>
+    <field name="dondate" type="datetime" column="donDate" nullable="true"/>
+    <field name="donmode" type="integer" column="donMode" nullable="true"/>
+    <many-to-one field="membre" target-entity="Membres">
+      <join-columns>
+        <join-column name="membre" referenced-column-name="id"/>
+      </join-columns>
+    </many-to-one>
+  </entity>
+</doctrine-mapping>

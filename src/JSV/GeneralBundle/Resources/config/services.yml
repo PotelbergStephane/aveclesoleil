@@ -1,0 +1,7 @@
+parameters:
+#    jsv_general.example.class: JSV\GeneralBundle\Example
+
+services:
+#    jsv_general.example:
+#        class: %jsv_general.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

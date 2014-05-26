@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="Adresses" table="adresses">
+    <indexes>
+      <index name="fk_adresses_villes1_idx" columns="commune"/>
+    </indexes>
+    <id name="id" type="integer" column="id">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="adresse" type="string" column="adresse" length="100" nullable="false"/>
+    <field name="codepostal" type="string" column="codePostal" length="10" nullable="false"/>
+    <many-to-one field="commune" target-entity="Communes">
+      <join-columns>
+        <join-column name="commune" referenced-column-name="id"/>
+      </join-columns>
+    </many-to-one>
+  </entity>
+</doctrine-mapping>

@@ -1,0 +1,7 @@
+parameters:
+#    jsv_multi_site.example.class: JSV\MultiSiteBundle\Example
+
+services:
+#    jsv_multi_site.example:
+#        class: %jsv_multi_site.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

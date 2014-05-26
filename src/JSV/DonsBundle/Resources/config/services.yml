@@ -1,0 +1,7 @@
+parameters:
+#    jsv_dons.example.class: JSV\DonsBundle\Example
+
+services:
+#    jsv_dons.example:
+#        class: %jsv_dons.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

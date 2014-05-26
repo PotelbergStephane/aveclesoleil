@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="Contacts" table="contacts">
+    <unique-constraints>
+      <unique-constraint name="mail_UNIQUE" columns="mail"/>
+    </unique-constraints>
+    <id name="id" type="boolean" column="id">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="titrecivilitefr" type="boolean" column="titreCiviliteFR" nullable="false"/>
+    <field name="titreciviliteen" type="boolean" column="titreCiviliteEN" nullable="false"/>
+    <field name="prenom" type="string" column="prenom" length="60" nullable="false"/>
+    <field name="nom" type="string" column="nom" length="60" nullable="false"/>
+    <field name="mail" type="string" column="mail" length="90" nullable="false"/>
+    <field name="telephone" type="string" column="telephone" length="20" nullable="true"/>
+    <field name="mobile" type="string" column="mobile" length="20" nullable="true"/>
+    <field name="fonnctionfr" type="text" column="fonnctionFR" nullable="false"/>
+    <field name="fonctionen" type="text" column="fonctionEN" nullable="true"/>
+  </entity>
+</doctrine-mapping>

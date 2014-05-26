@@ -1,0 +1,3 @@
+jsv_multi_site_homepage:
+    pattern:  /hello/{name}
+    defaults: { _controller: JSVMultiSiteBundle:Default:index }

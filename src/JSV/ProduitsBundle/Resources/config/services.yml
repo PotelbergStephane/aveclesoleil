@@ -1,0 +1,7 @@
+parameters:
+#    jsv_produits.example.class: JSV\ProduitsBundle\Example
+
+services:
+#    jsv_produits.example:
+#        class: %jsv_produits.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]
