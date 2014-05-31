@@ -80,7 +80,7 @@ class Articles
     /**
      * @var \Doctrine\Common\Collections\Collection
      *
-     * @ORM\OneToMany(targetEntity="Blogs", mappedBy="article")
+     * @ORM\ManyToMany(targetEntity="Rubriques", inversedBy="article")
      */
     private $rubrique;
 

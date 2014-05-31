@@ -62,7 +62,8 @@ class Rubriques
     /**
      * @var \Doctrine\Common\Collections\Collection
      *
-     * @ORM\OneToMany(targetEntity="Blogs", mappedBy="rubrique")
+     * @ORM\ManyToMany(targetEntity="Articles", mappedBy="rubrique")
+     * @ORM\JoinTable(name="blogs")
      */
     private $article;
 

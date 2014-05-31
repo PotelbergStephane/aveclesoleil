@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang='fr'>
+    <head>
+<!-- Basic Page Needs ================================================== -->
+        <meta charset="UTF-8" />
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+<!-- CSS ================================================== -->
+  	<link rel="stylesheet" href="{{ asset('css/alpha.css') }}">
+	<link rel="stylesheet" href="{{ asset('css/style.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/responsive.css') }}">
+        
+    </head>
+    <body>
+<!-- Entete ================================================== -->
+        <header id="entete">
+            <h1>Avec le soleil</h1>
+<!-- Nav principale ================================================== -->
+            <nav id="navMain">
+                <ul>
+                    <li><a href="#s5">Accueil</a></li>
+                    <li><a href="#s5">Formations</a></li>
+                    <li><a href="#s5">Vidéos</a></li>
+                    <li><a href="#s5">Partenaires</a></li>
+                    <li><a href="#s5">Contacts</a></li>
+                </ul>
+            </nav>
+<!-- Nav langue ================================================== -->
+            <nav id="navLang">
+                <ul>
+                    <li><a href="#s5">Français</a></li>
+                    <li><a href="#s5">English</a></li>
+                </ul>
+            </nav>
+        </header>
+<!-- Section globale ================================================== -->
+        <section>
+<!-- fil d'ariane ================================================== -->
+            <p>Vous êtes ici - <a href="#s1">Accueil</a></p>
+<!-- Section primaire ================================================== -->
+            <section>
+<!-- Article principal ================================================== -->
+                <article>
+<!-- Entete article principal ================================================== -->
+                    <header id="enteteArticle">
+                        <h1>l'alphabétisation</h1>
+                        <h2>Apprendre à lire et à écrire</h2>
+                    </header>
+<!-- Text article ================================================== -->
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+<!-- Bouton readMore ================================================== -->
+                    <p><a href="#s1" class="readMore">Voir plus</a></p>
+                </article>
+<!-- Aside ================================================== -->
+                <aside>
+<!-- Entete aside ================================================== -->
+                    <header id="enteteAside">
+                        <h1>Les derniers articles</h1>
+                    </header>
+<!-- Nav article ================================================== -->
+                    <nav id="navArticle">
+                        <ul>
+                            <li><a href="#s5">Apprendre à lire et à écrire</a></li>
+                            <li><a href="#s5">article 2</a></li>
+                            <li><a href="#s5">article 3</a></li>
+                        </ul>
+                    </nav>
+                </aside>
+            </section>
+<!-- ul blocks secondaire ================================================== -->
+            <ul>
+                <li>Blanc</li>
+                <li>Paypal</li>
+                <li>Google Agenda</li>
+            </ul>
+        </section>
+<!-- footer ================================================== -->
+        <footer>
+            footer
+        </footer>
+    </body>
+</html>
